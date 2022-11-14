@@ -1,0 +1,16 @@
+Generalization error가 발생했을때(func의 complexity 보다 정확도 우선 챙기다가 과적합??)
+func의 complexity를 높이기 위해 regularization 사용(특정 가중치 조절)
+
+Norm : 벡터의 크기 L1_norm은 차의 절대값들의 합(특정 feature 선택가능->sparse모델)	L2_norm은 유클라디안거리(dense모델)
+
+	L1_loss: 정답과 차의 절대값들의 합(0에서 미분불가)			L2_loss는 차의 제곱의 합(outlier에 민감)
+
+	L1_regularzation : cost(train_accuracy) += 가중치w 절대값 * 람다/2(Lasso regression) (generalization accuracy)
+	L2_regularzation : cost += 가중치w 절대값^2 * 람다/2(Ridge regression)
+
+			람다가 커지면 underfitting된다! (Cost?가 상수함수된다.)		작아지면 overfitting
+
+
+
+	고차원일수록 variance커지고(test error), bias낮이진다(train error).
+	
