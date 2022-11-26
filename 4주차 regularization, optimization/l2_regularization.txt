@@ -10,7 +10,4 @@ Norm : 벡터의 크기 L1_norm은 차의 절대값들의 합(특정 feature 선
 
 			람다가 커지면 underfitting된다! (Cost?가 상수함수된다.)		작아지면 overfitting
 
-
-
 	고차원일수록 variance커지고(test error), bias낮이진다(train error).
-	
